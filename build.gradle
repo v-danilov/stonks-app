@@ -13,14 +13,16 @@ repositories {
 	mavenCentral()
 }
 
+/*
 ext {
 	set('vaadinVersion', "14.2.1")
 }
+*/
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+	//implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'com.vaadin:vaadin-spring-boot-starter'
+	// implementation 'com.vaadin:vaadin-spring-boot-starter'
 	implementation 'org.springframework.kafka:spring-kafka'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
@@ -30,9 +32,9 @@ dependencies {
 }
 
 dependencyManagement {
-	imports {
+	/*imports {
 		mavenBom "com.vaadin:vaadin-bom:${vaadinVersion}"
-	}
+	}*/
 }
 
 test {
